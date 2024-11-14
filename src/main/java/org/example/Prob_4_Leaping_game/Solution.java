@@ -1,4 +1,4 @@
-package org.example.Prob_3_Leaping_game;
+package org.example.Prob_4_Leaping_game;
 
 import java.util.ArrayList;
 import java.util.Scanner;
