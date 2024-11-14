@@ -1,5 +1,8 @@
 package org.example.Prob_4_Leaping_game;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -7,14 +10,12 @@ public class Solution {
 
     public static boolean canWin(int leap, int[] game) {
         int currentPosition = 0;
-        boolean ongoing = true;
-        boolean result = false;
         if (leap > game.length - 1) {
             return true;
         }
         ArrayList<Integer> indexes = new ArrayList<>();
         indexes.add(0);
-        while (ongoing) {
+        while (true) {
             if (game[currentPosition + leap] == 0 &&
                     !indexes.contains(currentPosition + leap)) {
                 currentPosition += leap;
@@ -28,22 +29,17 @@ public class Solution {
                 currentPosition--;
                 indexes.add(currentPosition);
             } else {
-                ongoing = false;
+                return false;
             }
-            if (currentPosition == game.length - 1 && game[currentPosition] == 0) {
+            if (currentPosition + leap > game.length - 1) {
                 return true;
-            } else if (currentPosition > game.length - 1 || currentPosition + leap >
-                    game.length - 1) {
-                ongoing = false;
-                result = true;
             }
         }
-        return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Scanner scan = new Scanner(System.in);
-
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Write num of tests : : : ");
 
         int q = scan.nextInt();
@@ -59,13 +55,13 @@ public class Solution {
             int leap = scan.nextInt();
 
             int[] game = new int[n];
+            System.out.println("Insert this array : ");
+
+            String[] arrRowTempItems = reader.readLine().
+                    replaceAll("\\s+$", "").split(" ");
             for (int i = 0; i < n; i++) {
-
-                System.out.println("Write element of this array " + (i + 1));
-
-                game[i] = scan.nextInt();
+                game[i] = Integer.parseInt(arrRowTempItems[i]);
             }
-
             System.out.println((canWin(leap, game)) ? "YES" : "NO");
         }
         scan.close();
