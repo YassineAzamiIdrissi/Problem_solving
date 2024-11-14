@@ -1,4 +1,4 @@
-package org.example.Problem_5_SubArrays;
+package org.example.Prob_5_SubArrays;
 
 import java.io.IOException;
 import java.util.ArrayList;
