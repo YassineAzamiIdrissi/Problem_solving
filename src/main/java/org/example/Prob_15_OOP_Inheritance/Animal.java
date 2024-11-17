@@ -1,4 +1,4 @@
-package org.example.Problem15_OOP_Inheritence;
+package org.example.Prob_15_OOP_Inheritance;
 
 class Animal {
     void walk() {
