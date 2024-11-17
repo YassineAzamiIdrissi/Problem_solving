@@ -10,7 +10,6 @@ public class Solution {
     static BitSet B1, B2;
 
     public static void main(String args[]) throws IOException {
-        Scanner in = new Scanner(System.in);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String[] arrRowTempItems = reader.readLine().replaceAll
                 ("\\s+$", "").split(" ");
