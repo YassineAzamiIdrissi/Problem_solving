@@ -9,20 +9,6 @@ import java.util.Scanner;
 public class Solution {
     static BitSet B1, B2;
 
-    public static void calcBitSets(BitSet B1, BitSet B2) {
-        int num1 = 0;
-        int num2 = 0;
-        for (int i = 0; i < B1.length(); i++) {
-            if (B1.get(i)) {
-                num1++;
-            }
-            if (B2.get(i)) {
-                num2++;
-            }
-        }
-        System.out.println(num1 + " " + num2);
-    }
-
     public static void main(String args[]) throws IOException {
         Scanner in = new Scanner(System.in);
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -70,7 +56,7 @@ public class Solution {
                     B2.flip(index1);
                 }
             }
-            calcBitSets(B1, B2);
+            System.out.println(B1.cardinality() + " " + B2.cardinality());
         }
     }
 }
