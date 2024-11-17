@@ -56,7 +56,8 @@ public class Solution {
                     B2.flip(index1);
                 }
             }
-            System.out.println(B1.cardinality() + " " + B2.cardinality());
+            System.out.println(B1.cardinality() + " " +
+                    B2.cardinality());
         }
     }
 }
