@@ -1,4 +1,4 @@
-package org.example.Prob_18_CurrenctFromatter;
+package org.example.Prob_18_CurrencyFormatter;
 
 
 import java.text.NumberFormat;

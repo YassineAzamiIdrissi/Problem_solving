@@ -1,4 +1,4 @@
-package org.example.Problem_17_Iterators;
+package org.example.Prob_17_Iterators;
 
 import java.util.ArrayList;
 import java.util.Iterator;
