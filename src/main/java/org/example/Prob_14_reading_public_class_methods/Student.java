@@ -1,4 +1,4 @@
-package org.example.Problem_14_reading_public_class_methods;
+package org.example.Prob_14_reading_public_class_methods;
 
 public class Student {
     private String name;

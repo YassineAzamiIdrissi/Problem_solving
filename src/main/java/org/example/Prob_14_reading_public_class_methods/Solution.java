@@ -1,4 +1,4 @@
-package org.example.Problem_14_reading_public_class_methods;
+package org.example.Prob_14_reading_public_class_methods;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
