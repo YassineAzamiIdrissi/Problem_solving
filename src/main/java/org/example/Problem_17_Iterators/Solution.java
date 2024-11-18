@@ -9,7 +9,7 @@ public class Solution {
         Iterator it = mylist.iterator();
         while (it.hasNext()) {
             Object element = it.next();
-            if (element instanceof String && element.equals("###"))
+            if (element.equals("###"))
                 break;
         }
         return it;
