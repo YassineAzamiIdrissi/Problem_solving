@@ -1,4 +1,4 @@
-package org.example.Problem_27_regex;
+package org.example.Prob_27_regex;
 
 class UsernameValidator {
     public static final String regularExpression =
