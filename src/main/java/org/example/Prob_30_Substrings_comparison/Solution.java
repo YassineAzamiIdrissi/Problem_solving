@@ -24,13 +24,6 @@ public class Solution {
         }
         largest = subs.get(max_element);
         smallest = subs.get(min_element);
-//        System.out.println("----------------------------------------------------------");
-//        System.out.print("[ ");
-//        for (int i = 0; i < subs.size(); i++) {
-//            System.out.print(subs.get(i) + ",");
-//        }
-//        System.out.print(" ]");
-//        System.out.println("----------------------------------------------------------");
         return smallest + "\n" + largest;
     }
 
