@@ -1,50 +1,44 @@
 package org.example.Prob_7_Lists_Queries;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Solution {
 
-    public static void main(String args[]) {
-        ArrayList<Integer> array = new ArrayList<>();
-        System.out.println("Array size :: ");
-        Scanner scanner = new Scanner(System.in);
-        int n = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < n; i++) {
-            System.out.println("Element " + (i + 1));
-            array.add(Integer.parseInt(scanner.nextLine()));
+    public static void displayArray(ArrayList<Integer> list) {
+        for (var element : list) {
+            System.out.print(element + " ");
         }
-        System.out.println("Defining queries ::: ::: ");
-        System.out.println("Number of queries ");
-        int q = Integer.parseInt(scanner.nextLine());
-        for (int i = 0; i < q; ++i) {
-            System.out.println("Define query " + (i + 1));
-            String operation = scanner.nextLine();
-            if (operation.equals("Insert")) {
-                System.out.println("Define position : ");
-                int position = Integer.parseInt(scanner.nextLine());
-                System.out.println("Define number : ");
-                int number = Integer.parseInt(scanner.nextLine());
-                array.add(number);
-                int temp;
-                temp = array.get(position);
-                array.set(position, array.get(array.size() - 1));
-                array.set(array.size() - 1, temp);
-            } else if (operation.equals("Delete")) {
-                System.out.println("Define a position : ");
-                int position = Integer.parseInt(scanner.nextLine());
-                ArrayList<Integer> temp = new ArrayList<>();
-                for (int j = 0; j < array.size(); ++j) {
-                    if (j != position) {
-                        temp.add(array.get(j));
-                    }
-                }
-                array = temp;
+        System.out.println();
+    }
+
+    public static void main(String args[]) throws IOException {
+        BufferedReader reader = new BufferedReader(
+                new InputStreamReader(System.in)
+        );
+        int n = Integer.parseInt(reader.readLine());
+        String[] parts = reader.readLine().replaceAll("\\s+$", "").
+                split(" ");
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < parts.length; ++i) {
+            list.add(Integer.parseInt(parts[i]));
+        }
+        int queries = Integer.parseInt(reader.readLine());
+        for (int i = 0; i < queries; i++) {
+            String query = reader.readLine();
+            if (query.equals("Insert")) {
+                String[] coordinates = reader.readLine().replaceAll
+                                ("\\s+$", "").
+                        split(" ");
+                list.add(Integer.parseInt(coordinates[0]),
+                        Integer.parseInt(coordinates[1]));
+            } else {
+                int index = Integer.parseInt(reader.readLine());
+                list.remove(index);
             }
         }
-        for (int i = 0; i < array.size(); ++i) {
-            System.out.print(array.get(i) + " ");
-        }
-        scanner.close();
+        displayArray(list);
     }
 }
