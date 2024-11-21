@@ -38,4 +38,8 @@ build/
 .DS_Store
 
 /java-sources/
+
+/target/generated-sources/
+
+
 # Ou pour ignorer tous les fichiers avec une extension spécifique (si applicable)
