@@ -1,4 +1,4 @@
-package org.example.Prob_6;
+package org.example.Prob_6_matrix_queries;
 
 import java.util.ArrayList;
 import java.util.Scanner;
