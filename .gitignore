@@ -39,4 +39,3 @@ build/
 
 /java-sources/
 # Ou pour ignorer tous les fichiers avec une extension spécifique (si applicable)
-*.java
