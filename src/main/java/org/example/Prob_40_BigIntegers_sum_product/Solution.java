@@ -1,4 +1,4 @@
-package org.example.Prob_40;
+package org.example.Prob_40_BigIntegers_sum_product;
 
 import java.math.BigInteger;
 import java.util.Scanner;
