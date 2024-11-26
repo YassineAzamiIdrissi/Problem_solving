@@ -1,17 +1,12 @@
-package org.example.Algorithms.Problem_1_Simple_Sum;
+package org.example.Algos.Prob_1_Simple_sum;
 
-import java.io.*;
-import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
 public class Solution {
 
 
-
     static int solveMeFirst(int a, int b) {
-        return a+b;
+        return a + b;
     }
 
     public static void main(String[] args) {
