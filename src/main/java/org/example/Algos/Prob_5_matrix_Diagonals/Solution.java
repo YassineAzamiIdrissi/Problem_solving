@@ -1,4 +1,4 @@
-package org.example.Algos.Problem_5_matrix_Diagonals;
+package org.example.Algos.Prob_5_matrix_Diagonals;
 
 import java.io.*;
 import java.util.ArrayList;

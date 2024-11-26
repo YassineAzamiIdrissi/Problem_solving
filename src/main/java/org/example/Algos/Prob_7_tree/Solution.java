@@ -1,4 +1,4 @@
-package org.example.Algos.Problem_7_tree;
+package org.example.Algos.Prob_7_tree;
 
 import java.io.BufferedReader;
 import java.io.IOException;

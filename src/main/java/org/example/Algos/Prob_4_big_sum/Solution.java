@@ -1,4 +1,4 @@
-package org.example.Algos.Problem_4_big_sum;
+package org.example.Algos.Prob_4_big_sum;
 
 import java.io.*;
 import java.util.ArrayList;

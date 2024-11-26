@@ -1,4 +1,4 @@
-package org.example.Algos.Problem_9_birthday_handles;
+package org.example.Algos.Prob_9_birthday_handles;
 
 import java.io.*;
 import java.util.List;

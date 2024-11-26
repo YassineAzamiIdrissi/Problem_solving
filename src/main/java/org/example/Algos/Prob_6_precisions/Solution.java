@@ -1,4 +1,4 @@
-package org.example.Algos.Problem_6_precisions;
+package org.example.Algos.Prob_6_precisions;
 
 import java.io.BufferedReader;
 import java.io.IOException;

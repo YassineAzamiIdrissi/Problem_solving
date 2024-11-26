@@ -1,4 +1,4 @@
-package org.example.Algos.Problem_8_maxmin_four;
+package org.example.Algos.Prob_8_maxmin_four;
 
 import java.io.BufferedReader;
 import java.io.IOException;
