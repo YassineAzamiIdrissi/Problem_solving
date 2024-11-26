@@ -1,6 +1,4 @@
-package org.example.Algos.Problem_4;
-
-import org.example.Java.Prob_26_Calender_and_dates.Result;
+package org.example.Algos.Problem_4_big_sum;
 
 import java.io.*;
 import java.util.ArrayList;
